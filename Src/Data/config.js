@@ -1,0 +1,1 @@
+export const ProductsData = "https://raw.githubusercontent.com/samridhi-116/FaugetShop-API/main/Categories.json";
