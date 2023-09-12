@@ -16,7 +16,6 @@ const CartItems = ({item}) => {
           setCount(count + 1);
           dispatch(updateItem({ item, count: count + 1 }));
         }
-
       };
       const handleDecrement = () => {
         if (count > 0) {
