@@ -14,6 +14,7 @@ import Cart from "./Components/Cart";
 import store from "./Components/utils/store";
 import { Provider } from "react-redux";
 import Checkout from "./Components/Checkout";
+import Search from "./Components/Search";
 
 const AppLayout = () =>{
     return(
@@ -63,6 +64,10 @@ const AppRouter = createBrowserRouter([
             {
                 path: '/checkout',
                 element: <Checkout/>,
+            },
+            {
+                path: '/search',
+                element: <Search/>,
             },
         ]
     }
