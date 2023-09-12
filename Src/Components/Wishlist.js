@@ -12,7 +12,8 @@ const Wishlist = () => {
   const wishlistItems = useSelector(store => store?.wishlist?.items);
 
   return (wishlistItems.length == 0 )? <EmptyCart/> : (
-    <div className='w-11/12 mx-auto bg-white rounded-md my-8'>
+    <div className='w-11/12 mx-auto bg-white rounded-md my-8 px-8 py-6'>
+      <p className='text-2xl font-sans font-bold mb-8'>Wishlist</p>
       {wishlistItems.map((item) => <WishlistItems key={item.id} {...item}/>)}
       <div className='w-full flex flex-row justify-end'>
           <button 

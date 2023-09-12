@@ -12,8 +12,7 @@ const WishlistItems = ({item}) => {
         dispatch(addItem({item}))
     }
   return (
-    <div className='my-8 px-8 py-6'>
-        <p className='text-2xl font-sans font-bold mb-8'>Wishlist</p>
+    <div className='my-8'>
         <div className='mb-7 flex flex-row justify-start'>
             <div className='w-[23%] mr-12'>
                 <img src={item.image} className='w-full h-40 rounded-md' alt={item.name} />
