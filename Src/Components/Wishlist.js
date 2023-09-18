@@ -2,7 +2,7 @@ import React from 'react';
 import WishlistItems from './WishlistItems';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearWishlist } from './utils/wishlistSlice';
-import EmptyCart from './EmptyCart';
+import EmptyWishlist from './EmptyWishlist';
 
 const Wishlist = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ const Wishlist = () => {
   }
   const wishlistItems = useSelector(store => store?.wishlist?.items);
 
-  return (wishlistItems.length == 0 )? <EmptyCart/> : (
+  return (wishlistItems.length == 0 )? <EmptyWishlist/> : (
     <div className='w-11/12 mx-auto bg-white rounded-md my-8 px-8 py-6'>
       <p className='text-2xl font-sans font-bold mb-8'>Wishlist</p>
       {wishlistItems.map((item) => <WishlistItems key={item.id} {...item}/>)}
